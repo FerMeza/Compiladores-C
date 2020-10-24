@@ -1,12 +1,8 @@
+git clone <link>
+git status
+git pull
 git config --global user.email ""
 git config --global user.name ""
-git pull
-git status
-
-
-abc
-hola mundo! :)
-
-Hola fer te amamos 
-
-
+git add ejemplo.txt
+git commit -m "blh blah"
+git push
