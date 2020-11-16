@@ -15,13 +15,15 @@ import java.io.FileWriter;
 %unicode
 %type int 
 
-%xstate comentario
+/*******************************  Hecho por Meza Fernando: 16 Noviembre 2020
+									constantes de retorno  (numeros enteros) ****************************************/
 
 %{
+	public static final int ID = 1;
+	public static final int NUMERO = 2;
 	public static final int IMAGINARIO = 4;
 	public static final int DECIMAL = 3;
 	public static final int CONSTBOOL = 6;
-	public static final int NUMERO = 2;
 	public static final int CADENAS = 5;
 	public static final int OPERADORCRUZ = 7;
 	public static final int OPERADORMENOS = 8;
@@ -70,9 +72,16 @@ import java.io.FileWriter;
 	public static final int OR = 51;
 	public static final int VAR = 52;
 	public static final int PACK = 53;
-	public static final int ID = 1;
-	public static final int EOF = 0;
+	public static final int INC = 54;
+	public static final int DEC = 55;
+
+/********************* Creacion del objeto archivo y objeto Yylexer para leer tokens desde un archivo. Meza Fernando: 13 Noviembre 2020********************/
+
+
+
 	public static File archivo = null;
+	public static final int EOF = 0;
+	
 	public static void main(String[] args) {
         try {
         archivo = new File(args[0]);
@@ -85,33 +94,36 @@ import java.io.FileWriter;
 
 %}
 
+/*********************************************Detecta el final del archivo  %eofval{%eofval}******************************************/
+
+
 %eofval{
             return EOF;
 %eofval}
 
+
+
+/**********************			Creacion de expresiones regulares.
+								Aguilar Paulina, Aviles Bryan, Meza Fernando: 17 Noviembre 2020  *************z***************/
+
+
+
 digito = [0-9]
-enteros = {digito}+(_{digito}+)*               	//Segundo punto
+enteros = {digito}+(_{digito}+)*               
 letras = [a-zA-Z]
 ex=[Ee]([+-])?{enteros}+
 dec= {enteros}*"."{enteros}+|{enteros}+"."{enteros}*
-decex=({dec}{ex}?|{enteros}{ex})											//Tercer punto
+decex=({dec}{ex}?|{enteros}{ex})											
 imaginario=({dec}{ex}?("i")|{enteros}{ex}?("i"))
 espacios = [\n\t ]+
 cadenas=  ( (\") ( [^(\")\n]  | \\(\") )* (\") |  (\')([^(\')])*(\') ) //Quinto punto
-constbool = ("true" | "false") // Sexto punto
+constbool = ("true" | "false") 
 
-//Operadores
-//add_op = (+|-)
-//mul_op = (*|/| %)
-//unary_op = (+|-|*|&| !)
-//rel_op = ( ==|!=| < | <= | > | >= )
-//binary_op = ( "||" | && | rel_op | mul_op )
 add_op1  = "+"
 add_op2  = "-"
 mul_op1 = "*"
 mul_op2 = "/"
 mul_op3 = "%"
-//unary_op = "+"
 unary_op1 = "&"
 unary_op2 = "!"
 or = "||"
@@ -122,15 +134,14 @@ cor_L = "["
 cor_R = "]"
 lla_L = "{"
 lla_R = "}"
-
 rel_op_1 = "=="
 rel_op_2 = "!="
 rel_op_3 = "<"
 rel_op_4 = "<="
 rel_op_5 = ">"
 rel_op_6 = ">="
-
-//Palabras reservadas
+inc = "++"
+decre = "--"
 pack = package
 var = var
 const = const
@@ -157,20 +168,21 @@ for = for
 return = return
 break = break
 continue = continue
+id = ({letras}|_) (_{digito}| {letras}|_) *   
 
-id = ({letras}|_) (_{digito}| {letras}|_) *    // Primer punto
+
+/**********************Accion a realizar (retornar un numero) al encontrar un token, Hecho por 
+											Aguilar Paulina  y  Aviles Bryan 17 Noviembre 2020 ***************************/
  
 %%
-
 {espacios} {}
-
 {imaginario} {return IMAGINARIO; }
 {decex} {return DECIMAL;  }
 {constbool} {return CONSTBOOL; }
-
-
 {enteros} {return NUMERO; }
 {cadenas} {return CADENAS; }
+{inc} {return INC; }
+{decre} {return DEC; }
 {add_op1} {return OPERADORCRUZ; }
 {add_op2} {return OPERADORMENOS; }
 {mul_op1} {return ASTERISCO; }
