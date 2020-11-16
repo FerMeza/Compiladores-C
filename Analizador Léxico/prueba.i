@@ -77,7 +77,7 @@ import java.io.FileWriter;
         try {
         archivo = new File(args[0]);
 	 			Yylex lexer = new Yylex (new BufferedReader(new FileReader(archivo)));
-				lexer.Yylex();
+				lexer.yylex();
 	 			}catch (IOException e){
 	 			System.out.println("Ocurrio un error al intentar acceder al archivo");
 	 	}
