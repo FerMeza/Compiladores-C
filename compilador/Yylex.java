@@ -95,17 +95,17 @@ class Yylex {
 
   private static final String ZZ_ACTION_PACKED_0 =
     "\1\0\23\1\7\0\1\2\4\0\1\3\1\4\4\0"+
-    "\1\5\11\0\1\6\16\0\1\7\16\0\1\10\1\11"+
-    "\1\12\11\0\1\13\7\0\1\14\1\0\1\15\2\0"+
+    "\1\5\11\0\1\6\16\0\1\7\17\0\1\10\1\11"+
+    "\1\12\11\0\1\13\10\0\1\14\1\0\1\15\2\0"+
     "\1\16\2\0\1\17\1\20\1\21\4\0\1\22\1\23"+
-    "\1\24\1\25\2\0\1\26\1\27\4\0\1\30\5\0"+
-    "\1\31\5\0\1\32\1\0\1\33\1\34\1\35\2\0"+
-    "\1\36\2\0\1\37\1\40\1\41\1\42\1\43\5\0"+
-    "\1\44\1\45\1\46\1\47\1\50\1\51\1\52\3\0"+
-    "\1\53\1\54\1\0";
+    "\1\24\1\25\2\0\1\26\1\27\5\0\1\30\5\0"+
+    "\1\31\5\0\1\32\1\33\1\0\1\34\1\35\1\36"+
+    "\2\0\1\37\2\0\1\40\1\41\1\42\1\43\1\44"+
+    "\5\0\1\45\1\46\1\47\1\50\1\51\1\52\1\53"+
+    "\3\0\1\54\1\55\1\0";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[170];
+    int [] result = new int[174];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -139,22 +139,22 @@ class Yylex {
     "\0\41\0\u05cd\0\u05ee\0\u060f\0\u0630\0\u0651\0\u0672\0\u0693"+
     "\0\u06b4\0\u06d5\0\u06f6\0\u0717\0\u0738\0\u0759\0\u077a\0\41"+
     "\0\u079b\0\u07bc\0\u07dd\0\u07fe\0\u081f\0\u0840\0\u0861\0\u0882"+
-    "\0\u08a3\0\u08c4\0\u08e5\0\u0906\0\u0927\0\u0948\0\41\0\41"+
-    "\0\41\0\u0969\0\u098a\0\u09ab\0\u09cc\0\u09ed\0\u0a0e\0\u0a2f"+
-    "\0\u0a50\0\u0a71\0\41\0\u0a92\0\u0ab3\0\u0ad4\0\u0af5\0\u0b16"+
-    "\0\u0b37\0\u0b58\0\41\0\u0b79\0\41\0\u0b9a\0\u0bbb\0\41"+
-    "\0\u0bdc\0\u0bfd\0\41\0\41\0\41\0\u0c1e\0\u0c3f\0\u0c60"+
-    "\0\u0c81\0\41\0\41\0\41\0\41\0\u0ca2\0\u0cc3\0\41"+
-    "\0\41\0\u0ce4\0\u0d05\0\u0d26\0\u0d47\0\41\0\u0d68\0\u0d89"+
-    "\0\u0daa\0\u0dcb\0\u0dec\0\41\0\u0e0d\0\u0e2e\0\u0e4f\0\u0e70"+
-    "\0\u0e91\0\41\0\u0eb2\0\41\0\41\0\41\0\u0ed3\0\u0ef4"+
-    "\0\41\0\u0f15\0\u0f36\0\41\0\41\0\41\0\41\0\41"+
-    "\0\u0f57\0\u0f78\0\u0f99\0\u0fba\0\u0fdb\0\41\0\41\0\41"+
-    "\0\41\0\41\0\41\0\41\0\u0ffc\0\u101d\0\u103e\0\41"+
-    "\0\41\0\u105f";
+    "\0\u08a3\0\u08c4\0\u08e5\0\u0906\0\u0927\0\u0948\0\u0969\0\41"+
+    "\0\41\0\41\0\u098a\0\u09ab\0\u09cc\0\u09ed\0\u0a0e\0\u0a2f"+
+    "\0\u0a50\0\u0a71\0\u0a92\0\41\0\u0ab3\0\u0ad4\0\u0af5\0\u0b16"+
+    "\0\u0b37\0\u0b58\0\u0b79\0\u0b9a\0\41\0\u0bbb\0\41\0\u0bdc"+
+    "\0\u0bfd\0\41\0\u0c1e\0\u0c3f\0\41\0\41\0\41\0\u0c60"+
+    "\0\u0c81\0\u0ca2\0\u0cc3\0\41\0\41\0\41\0\41\0\u0ce4"+
+    "\0\u0d05\0\41\0\41\0\u0d26\0\u0d47\0\u0d68\0\u0d89\0\u0daa"+
+    "\0\41\0\u0dcb\0\u0dec\0\u0e0d\0\u0e2e\0\u0e4f\0\41\0\u0e70"+
+    "\0\u0e91\0\u0eb2\0\u0ed3\0\u0ef4\0\41\0\41\0\u0f15\0\41"+
+    "\0\41\0\41\0\u0f36\0\u0f57\0\41\0\u0f78\0\u0f99\0\41"+
+    "\0\41\0\41\0\41\0\41\0\u0fba\0\u0fdb\0\u0ffc\0\u101d"+
+    "\0\u103e\0\41\0\41\0\41\0\41\0\41\0\41\0\41"+
+    "\0\u105f\0\u1080\0\u10a1\0\41\0\41\0\u10c2";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[170];
+    int [] result = new int[174];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -192,34 +192,35 @@ class Yylex {
     "\2\0\1\71\52\0\1\72\1\0\1\73\34\0\1\74"+
     "\34\0\1\75\43\0\1\76\37\0\1\77\45\0\1\100"+
     "\20\0\1\101\51\0\1\102\41\0\1\103\44\0\1\104"+
-    "\35\0\1\105\36\0\1\106\36\0\1\107\52\0\1\110"+
-    "\17\0\1\111\47\0\1\112\40\0\1\113\30\0\1\114"+
-    "\41\0\1\115\44\0\1\116\40\0\1\117\52\0\1\120"+
-    "\22\0\1\121\3\0\1\122\33\0\1\123\45\0\1\124"+
-    "\34\0\1\125\55\0\1\126\24\0\1\127\37\0\1\130"+
-    "\57\0\1\131\21\0\1\132\42\0\1\133\35\0\1\134"+
-    "\40\0\1\135\45\0\1\136\33\0\1\137\43\0\1\140"+
-    "\35\0\1\141\61\0\1\142\24\0\1\143\52\0\1\144"+
-    "\25\0\1\145\46\0\1\146\43\0\1\147\34\0\1\150"+
-    "\43\0\1\151\40\0\1\152\22\0\1\153\1\154\66\0"+
-    "\1\155\35\0\1\156\40\0\1\157\30\0\1\160\31\0"+
-    "\1\161\42\0\1\162\54\0\1\163\15\0\1\164\1\165"+
-    "\56\0\1\166\42\0\1\167\17\0\1\170\1\171\56\0"+
-    "\1\172\40\0\1\173\26\0\1\174\63\0\1\175\17\0"+
-    "\1\176\51\0\1\177\23\0\1\200\60\0\1\201\31\0"+
-    "\1\202\42\0\1\203\31\0\1\204\43\0\1\205\46\0"+
-    "\1\206\37\0\1\207\36\0\1\210\43\0\1\211\31\0"+
-    "\1\212\31\0\1\213\30\0\1\214\1\215\67\0\1\216"+
-    "\21\0\1\217\11\0\1\220\46\0\1\221\40\0\1\222"+
-    "\34\0\1\223\13\0\1\224\1\225\1\226\66\0\1\227"+
-    "\21\0\1\230\37\0\1\231\55\0\1\232\42\0\1\233"+
-    "\43\0\1\234\33\0\1\235\43\0\1\236\10\0\1\237"+
-    "\1\240\1\241\1\242\1\243\1\244\61\0\1\245\32\0"+
-    "\1\246\42\0\1\247\46\0\1\250\10\0\1\251\65\0"+
-    "\1\236\44\0\1\252\27\0\1\236\16\0";
+    "\35\0\1\105\36\0\1\106\6\0\1\107\27\0\1\110"+
+    "\52\0\1\111\17\0\1\112\47\0\1\113\40\0\1\114"+
+    "\30\0\1\115\41\0\1\116\44\0\1\117\40\0\1\120"+
+    "\52\0\1\121\22\0\1\122\3\0\1\123\33\0\1\124"+
+    "\45\0\1\125\34\0\1\126\55\0\1\127\24\0\1\130"+
+    "\37\0\1\131\57\0\1\132\21\0\1\133\42\0\1\134"+
+    "\35\0\1\135\40\0\1\136\45\0\1\137\33\0\1\140"+
+    "\43\0\1\141\35\0\1\142\62\0\1\143\37\0\1\144"+
+    "\24\0\1\145\52\0\1\146\25\0\1\147\46\0\1\150"+
+    "\43\0\1\151\34\0\1\152\43\0\1\153\40\0\1\154"+
+    "\22\0\1\155\1\156\66\0\1\157\35\0\1\160\40\0"+
+    "\1\161\30\0\1\162\31\0\1\163\42\0\1\164\54\0"+
+    "\1\165\15\0\1\166\1\167\56\0\1\170\42\0\1\171"+
+    "\17\0\1\172\1\173\56\0\1\174\40\0\1\175\42\0"+
+    "\1\176\24\0\1\177\63\0\1\200\17\0\1\201\51\0"+
+    "\1\202\23\0\1\203\60\0\1\204\31\0\1\205\42\0"+
+    "\1\206\31\0\1\207\43\0\1\210\46\0\1\211\37\0"+
+    "\1\212\36\0\1\213\43\0\1\214\36\0\1\215\33\0"+
+    "\1\216\31\0\1\217\30\0\1\220\1\221\67\0\1\222"+
+    "\21\0\1\223\11\0\1\224\46\0\1\225\40\0\1\226"+
+    "\34\0\1\227\13\0\1\230\1\231\1\232\66\0\1\233"+
+    "\21\0\1\234\37\0\1\235\55\0\1\236\42\0\1\237"+
+    "\43\0\1\240\33\0\1\241\43\0\1\242\10\0\1\243"+
+    "\1\244\1\245\1\246\1\247\1\250\61\0\1\251\32\0"+
+    "\1\252\42\0\1\253\46\0\1\254\10\0\1\255\65\0"+
+    "\1\242\44\0\1\256\27\0\1\242\16\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[4224];
+    int [] result = new int[4323];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -263,14 +264,14 @@ class Yylex {
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
     "\1\0\1\11\22\1\7\0\1\1\4\0\2\11\4\0"+
-    "\1\11\11\0\1\11\16\0\1\11\16\0\3\11\11\0"+
-    "\1\11\7\0\1\11\1\0\1\11\2\0\1\11\2\0"+
-    "\3\11\4\0\4\11\2\0\2\11\4\0\1\11\5\0"+
-    "\1\11\5\0\1\11\1\0\3\11\2\0\1\11\2\0"+
+    "\1\11\11\0\1\11\16\0\1\11\17\0\3\11\11\0"+
+    "\1\11\10\0\1\11\1\0\1\11\2\0\1\11\2\0"+
+    "\3\11\4\0\4\11\2\0\2\11\5\0\1\11\5\0"+
+    "\1\11\5\0\2\11\1\0\3\11\2\0\1\11\2\0"+
     "\5\11\5\0\7\11\3\0\2\11\1\0";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[170];
+    int [] result = new int[174];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -391,6 +392,7 @@ class Yylex {
     public static final int COMA = 139;
     public static final int DOSPUNTOS = 140;
     public static final int ID = 141;
+    public static final int RETURN = 142;
 
     public Token nextToken(String lex, int num){
         return new Token(num, lex);
@@ -798,222 +800,227 @@ class Yylex {
             { System.out.println("Error");
             }
             // fall through
-          case 45: break;
+          case 46: break;
           case 2:
             { return nextToken("", DO);
             }
             // fall through
-          case 46: break;
+          case 47: break;
           case 3:
             { return nextToken(yytext(), ID);
             }
             // fall through
-          case 47: break;
+          case 48: break;
           case 4:
             { return nextToken("", IF);
             }
             // fall through
-          case 48: break;
+          case 49: break;
           case 5:
             { return nextToken("", OR);
             }
             // fall through
-          case 49: break;
+          case 50: break;
           case 6:
             { return nextToken("", AND);
             }
             // fall through
-          case 50: break;
+          case 51: break;
           case 7:
             { return nextToken("", INT);
             }
             // fall through
-          case 51: break;
+          case 52: break;
           case 8:
             { return nextToken("", CASE);
             }
             // fall through
-          case 52: break;
+          case 53: break;
           case 9:
             { return nextToken("", CHAR);
             }
             // fall through
-          case 53: break;
+          case 54: break;
           case 10:
             { return nextToken("", COMA);
             }
             // fall through
-          case 54: break;
+          case 55: break;
           case 11:
             { return nextToken("", FUNC);
             }
             // fall through
-          case 55: break;
+          case 56: break;
           case 12:
             { return nextToken("", TRUE);
             }
             // fall through
-          case 56: break;
+          case 57: break;
           case 13:
             { return nextToken("", VOID);
             }
             // fall through
-          case 57: break;
+          case 58: break;
           case 14:
             { return nextToken("", BREAK);
             }
             // fall through
-          case 58: break;
+          case 59: break;
           case 15:
             { return nextToken("", COR_L);
             }
             // fall through
-          case 59: break;
+          case 60: break;
           case 16:
             { return nextToken("", COR_R);
             }
             // fall through
-          case 60: break;
+          case 61: break;
           case 17:
             { return nextToken(yytext(), DECEX, 1);
             }
             // fall through
-          case 61: break;
+          case 62: break;
           case 18:
             { return nextToken("", FALSE);
             }
             // fall through
-          case 62: break;
+          case 63: break;
           case 19:
             { return nextToken("", FLOAT);
             }
             // fall through
-          case 63: break;
+          case 64: break;
           case 20:
             { return nextToken("", LLA_L);
             }
             // fall through
-          case 64: break;
+          case 65: break;
           case 21:
             { return nextToken("", LLA_R);
             }
             // fall through
-          case 65: break;
+          case 66: break;
           case 22:
             { return nextToken("", PAR_L);
             }
             // fall through
-          case 66: break;
+          case 67: break;
           case 23:
             { return nextToken("", PAR_R);
             }
             // fall through
-          case 67: break;
+          case 68: break;
           case 24:
             { return nextToken("", WHILE);
             }
             // fall through
-          case 68: break;
+          case 69: break;
           case 25:
             { return nextToken("", DOUBLE);
             }
             // fall through
-          case 69: break;
-          case 26:
-            { return nextToken("", SWITCH);
-            }
-            // fall through
           case 70: break;
-          case 27:
-            { return nextToken("", ADD_OP1);
+          case 26:
+            { return nextToken("",RETURN);
             }
             // fall through
           case 71: break;
-          case 28:
-            { return nextToken("", ADD_OP2);
+          case 27:
+            { return nextToken("", SWITCH);
             }
             // fall through
           case 72: break;
-          case 29:
-            { return nextToken(yytext(), CADENAS);
+          case 28:
+            { return nextToken("", ADD_OP1);
             }
             // fall through
           case 73: break;
-          case 30:
-            { return nextToken("", DEFAULT);
+          case 29:
+            { return nextToken("", ADD_OP2);
             }
             // fall through
           case 74: break;
-          case 31:
-            { return nextToken("", MUL_OP1);
+          case 30:
+            { return nextToken(yytext(), CADENAS);
             }
             // fall through
           case 75: break;
-          case 32:
-            { return nextToken("", MUL_OP2);
+          case 31:
+            { return nextToken("", DEFAULT);
             }
             // fall through
           case 76: break;
-          case 33:
-            { return nextToken("", MUL_OP3);
+          case 32:
+            { return nextToken("", MUL_OP1);
             }
             // fall through
           case 77: break;
-          case 34:
-            { return nextToken(yytext(), NUMEROS, 0);
+          case 33:
+            { return nextToken("", MUL_OP2);
             }
             // fall through
           case 78: break;
-          case 35:
-            { return nextToken("", PUNCOMA);
+          case 34:
+            { return nextToken("", MUL_OP3);
             }
             // fall through
           case 79: break;
-          case 36:
-            { 
+          case 35:
+            { return nextToken(yytext(), NUMEROS, 0);
             }
             // fall through
           case 80: break;
-          case 37:
-            { return nextToken("", REL_OP_1);
+          case 36:
+            { return nextToken("", PUNCOMA);
             }
             // fall through
           case 81: break;
-          case 38:
-            { return nextToken("", REL_OP_2);
+          case 37:
+            { 
             }
             // fall through
           case 82: break;
-          case 39:
-            { return nextToken("", REL_OP_3);
+          case 38:
+            { return nextToken("", REL_OP_1);
             }
             // fall through
           case 83: break;
-          case 40:
-            { return nextToken("", REL_OP_4);
+          case 39:
+            { return nextToken("", REL_OP_2);
             }
             // fall through
           case 84: break;
-          case 41:
-            { return nextToken("", REL_OP_5);
+          case 40:
+            { return nextToken("", REL_OP_3);
             }
             // fall through
           case 85: break;
-          case 42:
-            { return nextToken("", REL_OP_6);
+          case 41:
+            { return nextToken("", REL_OP_4);
             }
             // fall through
           case 86: break;
-          case 43:
-            { return nextToken("", DOSPUNTOS);
+          case 42:
+            { return nextToken("", REL_OP_5);
             }
             // fall through
           case 87: break;
-          case 44:
-            { return nextToken("", UNARY_OP1);
+          case 43:
+            { return nextToken("", REL_OP_6);
             }
             // fall through
           case 88: break;
+          case 44:
+            { return nextToken("", DOSPUNTOS);
+            }
+            // fall through
+          case 89: break;
+          case 45:
+            { return nextToken("", UNARY_OP1);
+            }
+            // fall through
+          case 90: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }
