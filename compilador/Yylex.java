@@ -834,7 +834,7 @@ class Yylex {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
-            { System.out.println("Token:" + yytext() + " no reconocido en columna " + yycolumn + " y linea " + yyline);
+            { System.out.println("Error lexico en Token:" + yytext() + " no reconocido en columna " + yycolumn + " y linea " + yyline);
             }
             // fall through
           case 50: break;
